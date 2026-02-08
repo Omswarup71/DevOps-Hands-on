@@ -1,0 +1,10 @@
+button{
+    color: aliceblue;
+    background-color: rgba(0, 128, 0, 0.919);
+    padding: 0.5rem 2rem;
+    border-radius: 0.3rem;
+}
+button:hover{
+    background-color: rgba(0, 128, 0, 0.717);
+    color: aliceblue;
+}
