@@ -1,0 +1,5 @@
+- name: Remove old container if exists
+  shell: docker rm -f snippetgod_app || true
+
+- name: Run container on port 81
+  command: docker run -d -p 81:4173 --name snippetgod_app snippetgod:1.0

@@ -1,0 +1,8 @@
+- name: Configure local machine and run SnippetGod
+- hosts: local
+  become: false
+  roles:
+    - docker
+    - app
+    - service
+

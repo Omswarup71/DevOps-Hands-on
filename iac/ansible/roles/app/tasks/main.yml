@@ -1,0 +1,10 @@
+- name: Stop existing container if running
+  command: docker rm -f snippetgod_app
+  ignore_errors: yes
+
+- name: Run SnippetGod container
+  command: >
+    docker run -d
+    --name snippetgod_app
+    -p 81:4173
+    snippetgod:1.0
